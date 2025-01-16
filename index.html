@@ -1,70 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles.css" type="text/css" />
     <title>Connor's Portfolio</title>
   </head>
-  <body class="bg-gray-200 flex w-full h-[100vh]">
-
+  <body class="bg-slate-100 dark:bg-slate-900 min-h-screen">
+    <div class="flex flex-col md:flex-row min-h-screen fixed inset-0">
       <!-- Sidebar -->
-      <div class="w-[10%] bg-[#114575] break-words">
-        <h1 class="text-white text-3xl mx-4 my-6">Connor Alexander</h1>
+      <div class="w-full md:w-[300px] bg-gradient-to-b from-blue-900 to-cyan-200 dark:from-blue-950 dark:to-blue-800 shadow-xl h-full md:min-h-screen overflow-y-auto">
+        <div class="p-6 space-y-8">
+          <!-- Profile -->
+          <h1 class="text-white text-3xl font-bold tracking-tight">Connor Alexander</h1>
 
-        <div class="h-10 w-full bg-[#072a52] flex justify-normal">
-          <h2 class="text-white text-2xl italic font-thin mx-6">Contact</h2>
-        </div>
-        <div class="text-white p-2 ml-4">
-          <h3 class="font-semibold">Address</h3>
-          <p class="mb-2 text-xs">Eastern Wisconsin</p>
-          <h3 class="font-semibold">Email</h3>
-          <p class="mb-2 text-xs break-all">
-            <a href="mailto:Connor.Alexander89@outlook.com" class="hover:text-[#d4603c]">
-              Connor.Alexander89
-            </a>
-          </p>
-          <a href="https://www.linkedin.com/in/connor-alexander-26894" class="block hover:text-[#d4603c] text-sm">LinkedIn</a>
-          <a href="https://github.com/Ardax-C" class="block hover:text-[#d4603c] text-sm">Github</a>
-        </div>
-        
-        <div class="h-10 w-full bg-[#072a52] flex justify-normal">
-          <h2 class="text-white text-2xl italic font-thin mx-6">Soft Skills</h2>
-        </div>
-        <div class="text-white p-2 ml-4 font-thin">
-          <p class="text-sm mb-2">Staff Training</p>
-          <p class="text-sm mb-2">Agile</p>
-          <p class="text-sm mb-2">Ethics</p>
-          <p class="text-sm mb-2">Cultural Awareness</p>
-          <p class="text-sm mb-2">Creative Problem Solver</p>
-          <p class="text-sm mb-2">Team Player</p>
-        </div>
+          <!-- Contact Section -->
+          <div class="space-y-4">
+            <div class="bg-blue-950/50 dark:bg-black/20 rounded-lg p-3">
+              <h2 class="text-white text-xl font-semibold mb-4">Contact</h2>
+              <div class="space-y-3 text-gray-200">
+                <div>
+                  <h3 class="text-sm font-medium text-gray-300">Address</h3>
+                  <p class="text-sm">Eastern Wisconsin</p>
+                </div>
+                <div>
+                  <h3 class="text-sm font-medium text-gray-300">Email</h3>
+                  <a href="mailto:Connor.Alexander89@outlook.com" 
+                     class="text-sm hover:text-blue-300 transition-colors">
+                    Connor.Alexander89@outlook.com
+                  </a>
+                </div>
+                <div class="flex gap-4 pt-2">
+                  <a href="https://www.linkedin.com/in/connor-alexander-26894" 
+                     class="text-sm hover:text-blue-300 transition-colors">LinkedIn</a>
+                  <a href="https://github.com/Ardax-C" 
+                     class="text-sm hover:text-blue-300 transition-colors">Github</a>
+                </div>
+              </div>
+            </div>
 
-        <div class="h-10 w-full bg-[#072a52] flex justify-normal">
-          <h2 class="text-white text-2xl italic font-thin mx-6">Technical</h2>
-        </div>
-        <div class="text-white p-2 ml-4 font-thin">
-          <p class="text-sm mb-2">Kubernetes</p>
-          <p class="text-sm mb-2">Docker</p>
-          <p class="text-sm mb-2">Golang</p>
-          <p class="text-sm mb-2">Git/Github/lab</p>
-          <p class="text-sm mb-2">Artifact Management</p>
-          <p class="text-sm mb-2">Python</p>
-        </div>
+            <!-- Soft Skills Section -->
+            <div class="bg-blue-950/50 dark:bg-black/20 rounded-lg p-3">
+              <h2 class="text-white text-xl font-semibold mb-4">Soft Skills</h2>
+              <div class="grid grid-cols-2 gap-2">
+                <span class="text-gray-200 text-sm py-1">Staff Training</span>
+                <span class="text-gray-200 text-sm py-1">Agile</span>
+                <span class="text-gray-200 text-sm py-1">Ethics</span>
+                <span class="text-gray-200 text-sm py-1">Cultural Awareness</span>
+                <span class="text-gray-200 text-sm py-1">Problem Solver</span>
+                <span class="text-gray-200 text-sm py-1">Team Player</span>
+              </div>
+            </div>
 
-        <div class="h-10 w-full bg-[#072a52] flex justify-normal">
-          <h2 class="text-white text-2xl italic font-thin mx-6">Languages</h2>
-        </div>
-        <div class="text-white p-2 ml-4 font-thin">
-          <p class="text-sm mb-2">English</p>
-          <p class="text-sm mb-2">German</p>
+            <!-- Technical Skills Section -->
+            <div class="bg-blue-950/50 dark:bg-black/20 rounded-lg p-3">
+              <h2 class="text-white text-xl font-semibold mb-4">Technical</h2>
+              <div class="grid grid-cols-2 gap-2">
+                <span class="text-gray-200 text-sm py-1">Kubernetes</span>
+                <span class="text-gray-200 text-sm py-1">Docker</span>
+                <span class="text-gray-200 text-sm py-1">Golang</span>
+                <span class="text-gray-200 text-sm py-1">Git/Github/lab</span>
+                <span class="text-gray-200 text-sm py-1">Artifact Management</span>
+                <span class="text-gray-200 text-sm py-1">Python</span>
+              </div>
+            </div>
+
+            <!-- Languages Section -->
+            <div class="bg-blue-950/50 dark:bg-black/20 rounded-lg p-3">
+              <h2 class="text-white text-xl font-semibold mb-4">Languages</h2>
+              <div class="space-y-2">
+                <span class="text-gray-200 text-sm block">English</span>
+                <span class="text-gray-200 text-sm block">German</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-  
-      <!-- Main content -->
-      <div class=" w-[85%]">2</div>
 
-    
+      <!-- Main content -->
+      <div class="flex-1 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 overflow-y-auto">
+        <div class="relative p-6 md:p-8">
+          <div class="max-w-5xl mx-auto space-y-8">
+            <!-- Page Views -->
+            <div class="absolute top-6 right-6 bg-white/90 dark:bg-slate-800/90 backdrop-blur border border-blue-900/10 dark:border-blue-300/10 rounded-md px-4 py-2 shadow-lg">
+              <div class="text-sm text-blue-900/80 dark:text-blue-300/80 font-medium tracking-wide">
+                Views: <span class="count-child font-bold"></span>
+              </div>
+            </div>
+
+            <!-- Introduction -->
+            <div class="relative bg-white dark:bg-slate-800 border border-blue-900/10 dark:border-blue-300/10 rounded-lg p-10 shadow-xl">
+              <div class="absolute -left-3 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-900 to-cyan-500"></div>
+              <p class="text-gray-800 dark:text-gray-200 leading-relaxed text-lg font-light tracking-wide italic">
+                From the deserts of Iraq to the alpine regions of Germany and Austria, my experiences have shaped me into who I am today. I am passionate about the intersection between technology and philosophy and how these can be leveraged to increase social wellness.
+              </p>
+            </div>
+
+            <!-- Education & Experience Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <!-- Education Section -->
+              <div class="bg-white dark:bg-slate-800 border border-blue-900/10 dark:border-blue-300/10 rounded-lg shadow-xl">
+                <div class="border-b border-blue-900/10 dark:border-blue-300/10 p-6">
+                  <h2 class="text-2xl text-blue-900 dark:text-blue-300 font-bold tracking-tight flex items-center">
+                    <span class="inline-block w-8 h-8 bg-gradient-to-br from-blue-900 to-cyan-500 rounded-md mr-4"></span>
+                    Education
+                  </h2>
+                </div>
+                
+                <div class="p-6 space-y-8">
+                  <div class="relative pl-6">
+                    <div class="absolute -left-3 top-0 bottom-0 w-px bg-gradient-to-b from-blue-900 to-cyan-500"></div>
+                    <div class="text-blue-900/80 dark:text-blue-300/80 font-medium tracking-wide mb-2">2021 – 2023</div>
+                    <h3 class="font-bold text-gray-900 dark:text-white text-xl mb-1">B.S. Applied Computing</h3>
+                    <p class="text-gray-600 dark:text-gray-400 font-medium">University of Wisconsin - River Falls</p>
+                    <p class="text-[#20c1dd] font-semibold mt-1">GPA 4.0 <span class="italic">Summa Cum Laude</span></p>
+                    <ul class="mt-3 space-y-2">
+                      <li class="flex items-center text-gray-700 dark:text-gray-300">
+                        <span class="w-1.5 h-1.5 bg-blue-900 dark:bg-blue-400 rounded-full mr-3"></span>
+                        Architected SHA-1 encrypted communications platform
+                      </li>
+                      <li class="flex items-center text-gray-700 dark:text-gray-300">
+                        <span class="w-1.5 h-1.5 bg-blue-900 dark:bg-blue-400 rounded-full mr-3"></span>
+                        Built out Github user search webapp
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="relative pl-6">
+                    <div class="absolute -left-3 top-0 bottom-0 w-px bg-gradient-to-b from-blue-900 to-cyan-500"></div>
+                    <div class="text-blue-900/80 dark:text-blue-300/80 font-medium tracking-wide mb-2">2012 – 2016</div>
+                    <h3 class="font-bold text-gray-900 dark:text-white text-xl mb-1">B.A. Philosophy</h3>
+                    <p class="text-gray-600 dark:text-gray-400 font-medium">University of Maryland – Baltimore County</p>
+                    <p class="text-[#20c1dd] font-semibold mt-1">GPA 3.7</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience Section -->
+              <div class="bg-white dark:bg-slate-800 border border-blue-900/10 dark:border-blue-300/10 rounded-lg shadow-xl">
+                <div class="border-b border-blue-900/10 dark:border-blue-300/10 p-6">
+                  <h2 class="text-2xl text-blue-900 dark:text-blue-300 font-bold tracking-tight flex items-center">
+                    <span class="inline-block w-8 h-8 bg-gradient-to-br from-blue-900 to-cyan-500 rounded-md mr-4"></span>
+                    Experience
+                  </h2>
+                </div>
+                
+                <div class="p-6 space-y-8">
+                  <div class="relative pl-6">
+                    <div class="absolute -left-3 top-0 bottom-0 w-px bg-gradient-to-b from-blue-900 to-cyan-500"></div>
+                    <div class="text-blue-900/80 dark:text-blue-300/80 font-medium tracking-wide mb-2">2023 - Present</div>
+                    <h3 class="font-bold text-gray-900 dark:text-white text-xl mb-1">Rotational Engineer</h3>
+                    <p class="text-gray-600 dark:text-gray-400 font-medium mb-3">U.S. Bank - Minneapolis, Minnesota</p>
+                    <ul class="space-y-2">
+                      <li class="flex items-center text-gray-700 dark:text-gray-300">
+                        <span class="w-1.5 h-1.5 bg-blue-900 dark:bg-blue-400 rounded-full mr-3"></span>
+                        Maintain Enterprise DevOps Tools
+                      </li>
+                      <li class="flex items-center text-gray-700 dark:text-gray-300">
+                        <span class="w-1.5 h-1.5 bg-blue-900 dark:bg-blue-400 rounded-full mr-3"></span>
+                        Modernize and migrate on-prem resources
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="relative pl-6">
+                    <div class="absolute -left-3 top-0 bottom-0 w-px bg-gradient-to-b from-blue-900 to-cyan-500"></div>
+                    <div class="text-blue-900/80 dark:text-blue-300/80 font-medium tracking-wide mb-2">2023</div>
+                    <h3 class="font-bold text-gray-900 dark:text-white text-xl mb-1">Intern</h3>
+                    <p class="text-gray-600 dark:text-gray-400 font-medium mb-3">U.S. Bank - Minneapolis, Minnesota</p>
+                    <ul class="space-y-2">
+                      <li class="flex items-center text-gray-700 dark:text-gray-300">
+                        <span class="w-1.5 h-1.5 bg-blue-900 dark:bg-blue-400 rounded-full mr-3"></span>
+                        Built artifact archive application handling 500+ concurrent operations
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="relative pl-6">
+                    <div class="absolute -left-3 top-0 bottom-0 w-px bg-gradient-to-b from-blue-900 to-cyan-500"></div>
+                    <div class="text-blue-900/80 dark:text-blue-300/80 font-medium tracking-wide mb-2">2007 - 2012</div>
+                    <h3 class="font-bold text-gray-900 dark:text-white text-xl mb-1">Infantryman (11C)</h3>
+                    <p class="text-gray-600 dark:text-gray-400 font-medium">US Army</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Azure Deployment Info -->
+            <div class="mt-12 bg-gradient-to-r from-blue-900 to-cyan-700 rounded-lg shadow-xl overflow-hidden">
+              <div class="p-8">
+                <div class="flex items-center mb-4">
+                  <svg class="w-8 h-8 text-white mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+                  </svg>
+                  <h2 class="text-2xl font-bold text-white tracking-tight">Azure Cloud Infrastructure</h2>
+                </div>
+                
+                <div class="text-blue-50/90 space-y-2 leading-relaxed">
+                  <p>This portfolio is deployed and maintained on Microsoft Azure, showcasing practical cloud infrastructure skills including:</p>
+                  <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 mt-4 text-blue-50/80">
+                    <li class="flex items-center">
+                      <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-3"></span>
+                      Azure Static Web Apps Configuration
+                    </li>
+                    <li class="flex items-center">
+                      <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-3"></span>
+                      Custom Domain Integration
+                    </li>
+                    <li class="flex items-center">
+                      <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-3"></span>
+                      DNS Management & CNAME Records
+                    </li>
+                    <li class="flex items-center">
+                      <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-3"></span>
+                      SSL/TLS Certificate Implementation
+                    </li>
+                    <li class="flex items-center">
+                      <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-3"></span>
+                      Azure Storage Account Setup
+                    </li>
+                    <li class="flex items-center">
+                      <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-3"></span>
+                      Content Delivery Network (CDN)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Theme Toggle Button -->
+            <div class="fixed bottom-6 right-6">
+              <button id="theme-toggle" class="p-2 rounded-full bg-white/90 dark:bg-slate-800/90 shadow-lg border border-blue-900/10 dark:border-blue-300/10 hover:bg-white dark:hover:bg-slate-700 transition-colors">
+                <!-- Sun icon -->
+                <svg id="sun-icon" class="w-6 h-6 text-blue-900 dark:text-blue-300 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                </svg>
+                <!-- Moon icon -->
+                <svg id="moon-icon" class="w-6 h-6 text-blue-900 dark:text-blue-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
