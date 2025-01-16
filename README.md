@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing my professional experience and technical skills. Built with HTML, Tailwind CSS, and vanilla JavaScript, deployed on Microsoft Azure.
 
-Check it out here 👉 [calexander.info](calexander.info)
+Check it out here 👉 <a href="https://calexander.info" target="_blank">calexander.info</a>
 
 ## Features
 
