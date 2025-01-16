@@ -55,4 +55,36 @@ document.addEventListener('DOMContentLoaded', () => {
             enableDarkMode();
         }
     });
+
+    // Updated animation code
+    function initializeAnimations() {
+        const animatedElements = document.querySelectorAll('.animate-on-scroll');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                // Add appear class when element comes into view
+                if (entry.isIntersecting) {
+                    // Small delay to ensure animation triggers
+                    setTimeout(() => {
+                        entry.target.classList.add('appear');
+                    }, 100);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '50px'
+        });
+
+        animatedElements.forEach(element => {
+            // Reset any existing animations
+            element.classList.remove('appear');
+            observer.observe(element);
+        });
+    }
+
+    // Initialize animations
+    initializeAnimations();
+
+    // Re-initialize on resize (in case of orientation change)
+    window.addEventListener('resize', initializeAnimations);
 });
